@@ -39,7 +39,6 @@ public class MainClass {
 		/* ---------------------------------------------------------
 		 *  Patterns from the slide examples
 		 * -------------------------------------------------------*/
-		// Pattern 1
 		System.out.print("Slide Patterns:\n");
 		System.out.print("Pattern 1:");
 		// Draw stars
@@ -51,7 +50,6 @@ public class MainClass {
 		// Draw dots
 		dotCount = mnObj.dotIterator(dotCount, 1);
 		
-		// Pattern 2
 		System.out.print("\nPattern 2:\n");
 		// Draw Dots
 		dotCount = mnObj.dotIterator(dotCount, 1);
@@ -62,7 +60,6 @@ public class MainClass {
 			System.out.print("\n");
 		}
 		
-		// Pattern 3
 		System.out.print("\nPattern 3:");
 		// Draw stars
 		for (int i = 0; i <= ROWS; i++) {
@@ -75,7 +72,6 @@ public class MainClass {
 		// Draw dots
 		dotCount = mnObj.dotIterator(dotCount, 1);
 		
-		// Pattern 4
 		System.out.print("\nPattern 4:\n");
 		// Draw dots
 		dotCount = mnObj.dotIterator(dotCount, 1);
@@ -103,7 +99,6 @@ public class MainClass {
 		// Draw dots
 		dotCount = mnObj.dotIterator(dotCount, -1);
 
-		// Pattern 2
 		System.out.print("\nPattern 2:");
 		// Draw stars
 		for (int i = 0; i <= ROWS; i++) {
