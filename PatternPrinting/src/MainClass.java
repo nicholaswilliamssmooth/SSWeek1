@@ -3,7 +3,7 @@
  */
 
 /**
- * @author Connor test
+ * @author Connor
  *
  */
 public class MainClass {
