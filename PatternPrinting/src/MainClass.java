@@ -33,7 +33,7 @@ public class MainClass {
 	public static void main(String[] args) {
 		// declare and initialize variables
 		int dotCount = DOT_INITIAL;
-		MainClass mnObj = new MainClass(); // let's use use methods without them needing to be static
+		MainClass mnObj = new MainClass(); // lets us use methods in main without them needing to be static
 		// Pattern 1
 		System.out.print("Pattern 1:");
 		// Draw stars
