@@ -1,13 +1,12 @@
 import java.util.Random;
 import java.util.Scanner;
 /**
- * 
+ * Program that generates a random number and has the user
+ * guess it
  */
 
 /**
  * @author Connor
- * Program that generates a random number and has the user
- * guess it
  */
 public class MainClass {
 	// constants
@@ -60,8 +59,7 @@ public class MainClass {
 				else { System.out.println("Try it again!"); }
 			}
 		}
-		
-
+		userInput.close();
 	}
 
 }
