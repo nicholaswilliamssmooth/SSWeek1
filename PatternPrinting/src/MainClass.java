@@ -18,14 +18,15 @@ public class MainClass {
 	/**
 	 * 
 	 * @param dot is the current amount of dots we want to draw
+	 * @param increase is the amount we want to increase on the count
 	 * @return returns an iteration so that we'll have one more dot on the next call
 	 */
-	public int dotIterator(int dot) {
+	public int dotIterator(int dot, int increase) {
 		for (int i = 0; i < dot; i++) {
 			System.out.print(DOT_SYMBOL);
 		}
 		System.out.print("\n");
-		return dot + 1;
+		return dot + increase;
 	}
 	/**
 	 * @param args do nothing for this program
@@ -34,7 +35,12 @@ public class MainClass {
 		// declare and initialize variables
 		int dotCount = DOT_INITIAL;
 		MainClass mnObj = new MainClass(); // lets us use methods in main without them needing to be static
+		
+		/* ---------------------------------------------------------
+		 *  Patterns from the slide examples
+		 * -------------------------------------------------------*/
 		// Pattern 1
+		System.out.print("Slide Patterns:\n");
 		System.out.print("Pattern 1:");
 		// Draw stars
 		for (int i = 0; i <= ROWS; i++) {
@@ -43,12 +49,12 @@ public class MainClass {
 			System.out.print("\n");
 		}
 		// Draw dots
-		dotCount = mnObj.dotIterator(dotCount);
+		dotCount = mnObj.dotIterator(dotCount, 1);
 		
 		// Pattern 2
 		System.out.print("\nPattern 2:\n");
 		// Draw Dots
-		dotCount = mnObj.dotIterator(dotCount);
+		dotCount = mnObj.dotIterator(dotCount, 1);
 		// Draw Stars
 		for (int i = ROWS; i > 0; i--) {
 			for (int j = 0; j < i; j++)
@@ -67,12 +73,12 @@ public class MainClass {
 			System.out.print("\n");
 		}
 		// Draw dots
-		dotCount = mnObj.dotIterator(dotCount);
+		dotCount = mnObj.dotIterator(dotCount, 1);
 		
 		// Pattern 4
 		System.out.print("\nPattern 4:\n");
 		// Draw dots
-		dotCount = mnObj.dotIterator(dotCount);
+		dotCount = mnObj.dotIterator(dotCount, 1);
 		// Draw Stars
 		for (int i = ROWS; i > 0; i--) {
 			for (int k = 0; k <= CENTER - i; k++)
@@ -81,6 +87,45 @@ public class MainClass {
 				System.out.print(STAR_SYMBOL);
 			System.out.print("\n");
 		}
+		
+		/* ---------------------------------------------------------
+		 *  Patterns from the notes section
+		 * -------------------------------------------------------*/
+		dotCount = 6; // reseting the dots for the notes patterns
+		System.out.print("\nNotes Patterns:\n");
+		System.out.print("Pattern 1:\n");
+		// Draw stars
+		for (int i = 0; i <= ROWS; i++) {
+			for (int j = 0; j < i; j++)
+				System.out.print(STAR_SYMBOL);
+			System.out.print("\n");
+		}
+		// Draw dots
+		dotCount = mnObj.dotIterator(dotCount, -1);
+
+		// Pattern 2
+		System.out.print("\nPattern 2:");
+		// Draw stars
+		for (int i = 0; i <= ROWS; i++) {
+			for (int k = 0; k <= ROWS-i; k++)
+				System.out.print(" ");
+			for (int j = 0; j < i; j++)
+				System.out.print(STAR_SYMBOL);
+			System.out.print("\n");
+		}
+		// Draw dots
+		dotCount = mnObj.dotIterator(dotCount, 0);
+		
+		System.out.print("\nPattern 3:\n");
+		// Draw dots
+		dotCount = mnObj.dotIterator(dotCount, 0);
+		// Draw Stars
+		for (int i = ROWS; i > 0; i--) {
+			for (int j = 0; j < i; j++)
+				System.out.print(STAR_SYMBOL);
+			System.out.print("\n");
+		}
+
 	}
 
 }
