@@ -36,10 +36,8 @@ public class MainClass {
 		 * answer, or exceeding our number of chances
 		*/
 		while (true) {
-			//System.out.println(generatedNum);
 			System.out.println("Guess the random number in the range of 1 and 100: ");
 			userAnswer = userInput.nextInt();
-			//System.out.println(userAnswer);
 			
 			// Success
 			if (Math.abs(userAnswer - generatedNum) <= APPROVED_RANGE) {
@@ -48,6 +46,7 @@ public class MainClass {
 						" and the generated number was " + generatedNum + ".");
 				break;
 			}
+			// Failure
 			else {
 				chance++;
 				System.out.println("Wrong answer!");
