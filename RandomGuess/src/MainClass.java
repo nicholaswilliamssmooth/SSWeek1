@@ -27,6 +27,7 @@ public class MainClass {
 		int generatedNum = randInt.nextInt(UPPER_BOUND-1) + LOWER_BOUND;
 		int chance = 0;
 		
+		// Initial message
 		System.out.println("A random number has been generated between"
 				+ " 1 and 100, \nCan you guess it?");
 		
