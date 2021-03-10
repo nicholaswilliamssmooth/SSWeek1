@@ -4,7 +4,7 @@
  */
 
 /**
- * @author Connor
+ * @author Nicholas Williams
  *
  */
 public class MainClass {
@@ -16,16 +16,15 @@ public class MainClass {
 		// Declare and initialize variables
 		Double total = 0.0;
 		
-		
-		for (String i : args) {
-			try { total += Double.valueOf(i); }
+		// Iterate and Add
+		for (String num : args) {
+			try { total += Double.valueOf(num); }
 			catch (NumberFormatException exception) {
 				System.out.println("Sorry, but you have entered an argument that is not a number, "
 						+ "this value will be ignored.");
 			}
-			
 		}
-		System.out.println("Total Amount = " + total);
+		System.out.println("Total Amount = " + total); // Final output
 		
 			
 	}
