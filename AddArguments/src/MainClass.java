@@ -10,7 +10,7 @@
 public class MainClass {
 
 	/**
-	 * @param args
+	 * @param args are the values from command line input to sum together
 	 */
 	public static void main(String[] args) {
 		// Declare and initialize variables
