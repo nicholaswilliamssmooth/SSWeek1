@@ -17,6 +17,7 @@ public class MainClass {
 	final static Integer MAX_VALUE = 1000;
 	final static Integer MIN_VALUE = 0;
 	
+	// Members
 	private Integer maxX, maxY; // Holds the position of the biggest number
 	
 	// Constructor
@@ -44,24 +45,25 @@ public class MainClass {
 	 */
 	public static void main(String[] args) {
 		// Declare and initialize variables
-		Random randNumber = new Random();
-		Integer[][] A;
-		A = new Integer[X_SIZE][Y_SIZE];
-		MainClass mnObj = new MainClass();
+		Random randNumber = new Random(); // Populates array with numbers
+		MainClass mnObj = new MainClass(); // Used to avoid making other methods static like main
+		Integer[][] A; // Array declaration
+		A = new Integer[X_SIZE][Y_SIZE]; // Array initialization
 
 		
 		// Fill up the 2d array with random numbers
 		for (Integer x = 0; x < X_SIZE; x++)
 			for (Integer y = 0; y < Y_SIZE; y++)
 				A[x][y] = randNumber.nextInt(MAX_VALUE-MIN_VALUE) + MIN_VALUE;
-
+		
+		// Find the highest value
 		for (Integer x = 0; x < X_SIZE; x++)
 			for (Integer y = 0; y < Y_SIZE; y++) {
 				if (A[mnObj.getMaxX()][mnObj.getMaxY()] < A[x][y])
 					mnObj.updateMax(x, y);
-				//System.out.println(A[x][y]);
 			}
 		
+		// Final output
 		System.out.println("The highest value was at position (" + mnObj.getMaxX() + ", " + mnObj.getMaxY() + ""
 				+ ") with a value of " + A[mnObj.getMaxX()][mnObj.getMaxY()]);
 
