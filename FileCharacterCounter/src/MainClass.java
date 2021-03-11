@@ -38,7 +38,7 @@ public class MainClass {
 			}	
 			f.close();
 			// Final Output
-			System.out.println("\nWithin this text there were " + charCounter
+			System.out.println("Within this text there were " + charCounter
 					+ " instances of the character \'" + matchingChar + "\'." );
 
 		}
