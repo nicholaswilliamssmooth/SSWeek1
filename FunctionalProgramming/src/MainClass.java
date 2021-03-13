@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 /**
- * 
+ * Program manipulates data with lambda expressions as a fun exercise
  */
 
 /**
@@ -116,9 +116,11 @@ public class MainClass {
 		strs.sort((str1, str2) -> mnObj.helperMethod(str1, str2));
 		strs.forEach(titles -> System.out.print("\t\t" + titles + "\n"));
 		
+		// Integer Commas formatting
 		System.out.println("\nInteger Commas:");
 		System.out.print("\t" + mnObj.intCommas(Arrays.asList(1, 2, 3, 4, 0, 23, 58, 22)));
 		
+		// Filtering strings, only return 3 character long strings starting with 'a'
 		System.out.println("\n\nFiltering Strings:");
 		mnObj.stringTest(
 			Arrays.asList("ace", "eaa", "eaaaa", "aee", "ate"))
