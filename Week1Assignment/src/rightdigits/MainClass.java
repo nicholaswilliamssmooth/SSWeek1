@@ -15,7 +15,7 @@ public class MainClass {
 	
 	
 	/**
-	 * creates a new list with only the ammount of digits specified
+	 * creates a new list with only the amount of digits specified
 	 * @param nums list of integers that are fed through
 	 * @return returns a new list 
 	 */
