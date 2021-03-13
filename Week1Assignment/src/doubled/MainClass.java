@@ -17,7 +17,7 @@ public class MainClass {
 	 * @param nums list of integers that are fed through
 	 * @return returns a new list 
 	 */
-	public List<Integer> doubleNum(List<Integer> nums) {
+	public List<Integer> doubling(List<Integer> nums) {
 		nums.replaceAll(n -> n * 2);
 		return nums;
 	}
@@ -27,9 +27,9 @@ public class MainClass {
 	 */
 	public static void main(String[] args) {
 		MainClass mnObj = new MainClass(); 
-		System.out.println(mnObj.doubleNum(Arrays.asList(1, 2, 3)));
-		System.out.println(mnObj.doubleNum(Arrays.asList(6, 8, 6, 8, -1)));
-		System.out.println(mnObj.doubleNum(Arrays.asList()));
+		System.out.println(mnObj.doubling(Arrays.asList(1, 2, 3)));
+		System.out.println(mnObj.doubling(Arrays.asList(6, 8, 6, 8, -1)));
+		System.out.println(mnObj.doubling(Arrays.asList()));
 
 
 	}
