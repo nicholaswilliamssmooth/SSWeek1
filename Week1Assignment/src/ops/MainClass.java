@@ -1,13 +1,17 @@
-package ops;
 /*
  * Program that takes an input file and runs it through lambda functions
  */
+package ops;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/**
+ * @author Nicholas Williams
+ *
+ */
 
 public class MainClass {
 	
